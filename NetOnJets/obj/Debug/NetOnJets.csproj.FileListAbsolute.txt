@@ -1,9 +1,8 @@
-c:\users\taylor\documents\visual studio 2013\Projects\NetOnJets\NetOnJets\bin\Debug\NetOnJets.exe.config
 c:\users\taylor\documents\visual studio 2013\Projects\NetOnJets\NetOnJets\obj\Debug\NetOnJets.csprojResolveAssemblyReference.cache
-c:\users\taylor\documents\visual studio 2013\Projects\NetOnJets\NetOnJets\bin\Debug\NetOnJets.exe
-c:\users\taylor\documents\visual studio 2013\Projects\NetOnJets\NetOnJets\bin\Debug\NetOnJets.pdb
-c:\users\taylor\documents\visual studio 2013\Projects\NetOnJets\NetOnJets\obj\Debug\NetOnJets.exe
-c:\users\taylor\documents\visual studio 2013\Projects\NetOnJets\NetOnJets\obj\Debug\NetOnJets.pdb
-C:\Users\Taylor\documents\visual studio 2013\Projects\NetOnJets\NetOnJets\bin\Debug\FluentCommandLineParser.dll
-C:\Users\Taylor\documents\visual studio 2013\Projects\NetOnJets\NetOnJets\bin\Debug\FluentCommandLineParser.pdb
-C:\Users\Taylor\documents\visual studio 2013\Projects\NetOnJets\NetOnJets\bin\Debug\FluentCommandLineParser.xml
+C:\Users\Taylor\documents\visual studio 2013\Projects\NetOnJets\NetOnJets\bin\Debug\PowerArgs.dll
+C:\Users\Taylor\documents\visual studio 2013\Projects\NetOnJets\NetOnJets\bin\Debug\PowerArgs.xml
+C:\Users\Taylor\documents\visual studio 2013\Projects\NetOnJets\NetOnJets\bin\Debug\jet.exe.config
+C:\Users\Taylor\documents\visual studio 2013\Projects\NetOnJets\NetOnJets\bin\Debug\jet.exe
+C:\Users\Taylor\documents\visual studio 2013\Projects\NetOnJets\NetOnJets\bin\Debug\jet.pdb
+C:\Users\Taylor\documents\visual studio 2013\Projects\NetOnJets\NetOnJets\obj\Debug\jet.exe
+C:\Users\Taylor\documents\visual studio 2013\Projects\NetOnJets\NetOnJets\obj\Debug\jet.pdb

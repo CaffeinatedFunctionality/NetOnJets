@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -9,43 +8,42 @@ using Microsoft.Build.Evaluation;
 using Microsoft.Build.Execution;
 using Microsoft.Build.Framework;
 using Microsoft.Build.Logging;
-using NuGet.VisualStudio;
 using PowerArgs;
 
-namespace NetOnJets.Commands
+namespace NetOnJets.Models
 {
-    public static class DefaultCommands
+    class CommandArgs
     {
         [HelpHook, ArgShortcut("-?"), ArgDescription("Shows this help")]
-        public static bool Help { get; set; }
+        public bool Help { get; set; }
 
         [ArgActionMethod, ArgDescription("Creates a new application")]
-        public static void New(string[] args)
+        public void New(NewArgs args)
         {
             //creates a new application
         }
 
         [ArgActionMethod, ArgDescription("Generates a model with attributes or controller with views")]
-        public static void Generate(string[] args)
+        public void Generate(GeneratorArgs args)
         {
             //generates a new controller/model
         }
 
         [ArgActionMethod, ArgDescription("Installs Nuget Package")]
         //for interacting with Nuget Package Manager
-        public static void Install()
+        public void Install()
         {
             //installs Nugets
         }
 
         [ArgActionMethod, ArgDescription("Uninstalls Nuget Package")]
-        public static void Uninstall()
+        public void Uninstall()
         {
             //uninstalls Nugets
         }
 
         [ArgActionMethod, ArgDescription("Builds a solution")]
-        public static void Build(string args, string buildConfiguration = "Release")
+        public void Build(string args, string buildConfiguration = "Release")
         {
             string projectFileName = args + ".sln";
             var fileInfo = new FileInfo(projectFileName);

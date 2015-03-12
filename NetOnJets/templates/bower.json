@@ -1,8 +1,0 @@
-{
-    "name": "$rootnamespace$",
-    "private": true,
-    "dependencies": {
-    },
-    "exportsOverride": {
-    }
-}
