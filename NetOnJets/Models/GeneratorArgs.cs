@@ -7,7 +7,7 @@ using PowerArgs;
 
 namespace NetOnJets.Models
 {
-    class GeneratorArgs
+    public class GeneratorArgs
     {
         [ArgDescription("Controller Name")]
         [ArgShortcut("-c"), ArgShortcut("-controller")]

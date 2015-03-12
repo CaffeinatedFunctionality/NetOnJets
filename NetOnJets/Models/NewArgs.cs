@@ -7,7 +7,7 @@ using PowerArgs;
 
 namespace NetOnJets.Models
 {
-    class NewArgs
+    public class NewArgs
     {
         [HelpHook, ArgShortcut("-?"), ArgDescription("Shows this help")]
         public bool Help { get; set; }

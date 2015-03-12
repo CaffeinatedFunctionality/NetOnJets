@@ -9,6 +9,7 @@ using Microsoft.Build.Evaluation;
 using Microsoft.Build.Execution;
 using Microsoft.Build.Framework;
 using Microsoft.Build.Logging;
+using NetOnJets.Models;
 using NuGet.VisualStudio;
 using PowerArgs;
 
@@ -20,13 +21,13 @@ namespace NetOnJets.Commands
         public static bool Help { get; set; }
 
         [ArgActionMethod, ArgDescription("Creates a new application")]
-        public static void New(string[] args)
+        public static void New(NewArgs args)
         {
             //creates a new application
         }
 
         [ArgActionMethod, ArgDescription("Generates a model with attributes or controller with views")]
-        public static void Generate(string[] args)
+        public static void Generate(GeneratorArgs args)
         {
             //generates a new controller/model
         }
@@ -45,14 +46,14 @@ namespace NetOnJets.Commands
         }
 
         [ArgActionMethod, ArgDescription("Builds a solution")]
-        public static void Build(string args, string buildConfiguration = "Release")
+        public static void Build(BuildArgs args)
         {
-            string projectFileName = args + ".sln";
+            string projectFileName = args.SolutionName + ".sln";
             var fileInfo = new FileInfo(projectFileName);
             string projectPath = fileInfo.DirectoryName + "\\" + projectFileName;
             ProjectCollection pc = new ProjectCollection();
             Dictionary<string, string> globalProperty = new Dictionary<string, string>();
-            globalProperty.Add("Configuration", buildConfiguration);
+            globalProperty.Add("Configuration", args.ConfigurationName);
 
             BuildRequestData buildRequest = new BuildRequestData(projectPath, globalProperty, null, new string[] { "Rebuild" }, null);
 
