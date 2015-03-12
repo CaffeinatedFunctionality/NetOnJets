@@ -48,24 +48,17 @@ namespace NetOnJets.Models
         public void Build(BuildArgs args)
         {
             string projectFileName;
-            if (args.Project == true)
+            var projregex = new Regex(@".*\.csproj?$");
+            var slnregex = new Regex(@".*\.sln?$");
+            if (projregex.IsMatch(args.SolutionName) || slnregex.IsMatch(args.SolutionName))
             {
-                var regex = new Regex(@".*\.csproj?$");
-                if (regex.IsMatch(args.SolutionName))
-                {
-                    projectFileName = args.SolutionName;
-                }
-                else
-                {
-                    projectFileName = args.SolutionName + ".csproj";
-                }
+                projectFileName = args.SolutionName;
             }
             else
             {
-                var regex = new Regex(@".*\.sln?$");
-                if (regex.IsMatch(args.SolutionName))
+                if (args.Project == true)
                 {
-                    projectFileName = args.SolutionName;
+                    projectFileName = args.SolutionName + ".csproj";
                 }
                 else
                 {
