@@ -26,9 +26,17 @@ namespace NetOnJets.Models
         }
 
         [ArgActionMethod, ArgDescription("Generates a model with attributes or controller with views")]
+        [ArgShortcut("g"), ArgShortcut("gen")]
         public void Generate(GeneratorArgs args)
         {
-            //generates a new controller/model
+            if (args.Model == true)
+            {
+                //run model generator
+            }
+            else if (args.Controller == true)
+            {
+                //run controller generator
+            }
         }
 
         [ArgActionMethod, ArgDescription("Installs Nuget Package")]
