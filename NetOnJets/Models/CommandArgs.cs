@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Microsoft.Build.Evaluation;
 using Microsoft.Build.Execution;
@@ -43,10 +44,34 @@ namespace NetOnJets.Models
             //uninstalls Nugets
         }
 
-        [ArgActionMethod, ArgDescription("Builds a solution")]
+        [ArgActionMethod, ArgDescription("Builds a project or solution")]
         public void Build(BuildArgs args)
         {
-            string projectFileName = args.SolutionName + ".sln";
+            string projectFileName;
+            if (args.Project == true)
+            {
+                var regex = new Regex(@".*\.csproj?$");
+                if (regex.IsMatch(args.SolutionName))
+                {
+                    projectFileName = args.SolutionName;
+                }
+                else
+                {
+                    projectFileName = args.SolutionName + ".csproj";
+                }
+            }
+            else
+            {
+                var regex = new Regex(@".*\.sln?$");
+                if (regex.IsMatch(args.SolutionName))
+                {
+                    projectFileName = args.SolutionName;
+                }
+                else
+                {
+                    projectFileName = args.SolutionName + ".sln";
+                }
+            }
             var fileInfo = new FileInfo(projectFileName);
             string projectPath = fileInfo.DirectoryName + "\\" + projectFileName;
             ProjectCollection pc = new ProjectCollection();

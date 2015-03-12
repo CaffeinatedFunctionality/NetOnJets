@@ -5,3 +5,4 @@ C:\Users\Taylor\documents\visual studio 2013\Projects\NetOnJets\NetOnJets\bin\De
 C:\Users\Taylor\documents\visual studio 2013\Projects\NetOnJets\NetOnJets\bin\Debug\jet.pdb
 C:\Users\Taylor\documents\visual studio 2013\Projects\NetOnJets\NetOnJets\obj\Debug\jet.exe
 C:\Users\Taylor\documents\visual studio 2013\Projects\NetOnJets\NetOnJets\obj\Debug\jet.pdb
+C:\Users\Taylor\documents\visual studio 2013\Projects\NetOnJets\NetOnJets\obj\Debug\NetOnJets.csprojResolveAssemblyReference.cache

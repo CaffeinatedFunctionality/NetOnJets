@@ -12,7 +12,7 @@ namespace NetOnJets.Models
         [ArgDescription("This is the SolutionName"), ArgPosition(1)]
         public string SolutionName { get; set; }
 
-        [ArgDescription("This is the Project Override"), DefaultValue("")]
+        [ArgDescription("This is the Project Override"), DefaultValue(false)]
         [ArgShortcut("-p")]
         public bool Project { get; set; }
         
