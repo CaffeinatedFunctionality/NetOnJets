@@ -9,13 +9,13 @@ For example the design of this project is to do the following...
 
 To create a new ASP.NET MVC5 Project you would type...
 
-    'jet new "Blog"' 
+    jet new "Blog" 
 
 Blog is the title of the application. It would generate everything needed to build a new MVC5 Application and will take arguments to build other types of projects.
 
 To create a new model with attributes you would type...
 
-    'jet g "PostModel" -a "Title", "Body", "CreatedAt:DateTime", "UserId:Int"
+    jet g "PostModel" -a "Title", "Body", "CreatedAt:DateTime", "UserId:Int"
 
 This will create a PostModel with an Id(automatically generated you wouldn't need to type it here), a Title with type String, a Body with type String, a CreatedAt with type DateTime, and a UserId with type Int.
 If you wanted to use a controller with scaffolded views for handling CRUD you would use a -c -v and if you wanted to use a repository this will automatically generate a new C# Project with the title ProjectTitle.Core and create a Repository and Mapping folder with EF Mapping
@@ -23,7 +23,7 @@ If you wanted to use a controller with scaffolded views for handling CRUD you wo
 
 To create a new controller you would type...
 
-    'jet g "PostController" -v "Create", "Read", "Update", "Delete", "Index"
+    jet g "PostController" -v "Create", "Read", "Update", "Delete", "Index"
 
 This will be expected to create this controller with view pages, though doing it this way the views will not have scaffolded pages.
 
