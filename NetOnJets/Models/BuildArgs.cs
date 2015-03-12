@@ -9,20 +9,15 @@ namespace NetOnJets.Models
 {
     public class BuildArgs
     {
-        [HelpHook, ArgShortcut("-?"), ArgDescription("Shows this help")]
-        public bool Help { get; set; }
-
-        [ArgDescription("This is the SolutionName"), ArgPosition(2)]
-        [ArgRequired(PromptIfMissing = true)]
+        [ArgDescription("This is the SolutionName"), ArgPosition(1)]
         public string SolutionName { get; set; }
-        [ArgDescription("This is the Project Override")]
-        [ArgShortcut("-p"), ArgShortcut("-project")]
+
+        [ArgDescription("This is the Project Override"), DefaultValue("")]
+        [ArgShortcut("-p")]
         public bool Project { get; set; }
-        [ArgDescription("This is the Config Options")]
-        [ArgShortcut("-o"), ArgShortcut("-options")]
-        public string Options { get; set; }
-        [ArgDescription("This is the Config Name")]
+        
+        [ArgDescription("This is the Config Name"), DefaultValue("Release")]
         [ArgShortcut("-c"), ArgShortcut("-config")]
-        public string ConfigurationName { get; set; }
+        public string BuildConfiguration { get; set; }
     }
 }

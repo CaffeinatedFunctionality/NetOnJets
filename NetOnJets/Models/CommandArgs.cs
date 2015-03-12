@@ -14,6 +14,7 @@ namespace NetOnJets.Models
 {
     class CommandArgs
     {
+
         [HelpHook, ArgShortcut("-?"), ArgDescription("Shows this help")]
         public bool Help { get; set; }
 
@@ -43,14 +44,14 @@ namespace NetOnJets.Models
         }
 
         [ArgActionMethod, ArgDescription("Builds a solution")]
-        public void Build(string args, string buildConfiguration = "Release")
+        public void Build(BuildArgs args)
         {
-            string projectFileName = args + ".sln";
+            string projectFileName = args.SolutionName + ".sln";
             var fileInfo = new FileInfo(projectFileName);
             string projectPath = fileInfo.DirectoryName + "\\" + projectFileName;
             ProjectCollection pc = new ProjectCollection();
             Dictionary<string, string> globalProperty = new Dictionary<string, string>();
-            globalProperty.Add("Configuration", buildConfiguration);
+            globalProperty.Add("Configuration", args.BuildConfiguration);
 
             BuildRequestData buildRequest = new BuildRequestData(projectPath, globalProperty, null, new string[] { "Rebuild" }, null);
 

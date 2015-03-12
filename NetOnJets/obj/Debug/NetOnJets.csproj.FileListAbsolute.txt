@@ -1,4 +1,3 @@
-c:\users\taylor\documents\visual studio 2013\Projects\NetOnJets\NetOnJets\obj\Debug\NetOnJets.csprojResolveAssemblyReference.cache
 C:\Users\Taylor\documents\visual studio 2013\Projects\NetOnJets\NetOnJets\bin\Debug\PowerArgs.dll
 C:\Users\Taylor\documents\visual studio 2013\Projects\NetOnJets\NetOnJets\bin\Debug\PowerArgs.xml
 C:\Users\Taylor\documents\visual studio 2013\Projects\NetOnJets\NetOnJets\bin\Debug\jet.exe.config

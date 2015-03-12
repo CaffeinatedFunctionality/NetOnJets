@@ -1,0 +1,14 @@
+C:\Users\Taylor\Documents\Visual Studio 2013\Projects\NetOnJets\NetOnJets\bin\Debug\GeekedOutReviews.Core\bin\Release\GeekedOutReviews.Core.dll
+C:\Users\Taylor\Documents\Visual Studio 2013\Projects\NetOnJets\NetOnJets\bin\Debug\GeekedOutReviews.Core\bin\Release\GeekedOutReviews.Core.pdb
+C:\Users\Taylor\Documents\Visual Studio 2013\Projects\NetOnJets\NetOnJets\bin\Debug\GeekedOutReviews.Core\bin\Release\FluentNHibernate.dll
+C:\Users\Taylor\Documents\Visual Studio 2013\Projects\NetOnJets\NetOnJets\bin\Debug\GeekedOutReviews.Core\bin\Release\NHibernate.dll
+C:\Users\Taylor\Documents\Visual Studio 2013\Projects\NetOnJets\NetOnJets\bin\Debug\GeekedOutReviews.Core\bin\Release\Ninject.dll
+C:\Users\Taylor\Documents\Visual Studio 2013\Projects\NetOnJets\NetOnJets\bin\Debug\GeekedOutReviews.Core\bin\Release\Ninject.Web.Common.dll
+C:\Users\Taylor\Documents\Visual Studio 2013\Projects\NetOnJets\NetOnJets\bin\Debug\GeekedOutReviews.Core\bin\Release\FluentNHibernate.pdb
+C:\Users\Taylor\Documents\Visual Studio 2013\Projects\NetOnJets\NetOnJets\bin\Debug\GeekedOutReviews.Core\bin\Release\FluentNHibernate.xml
+C:\Users\Taylor\Documents\Visual Studio 2013\Projects\NetOnJets\NetOnJets\bin\Debug\GeekedOutReviews.Core\bin\Release\NHibernate.xml
+C:\Users\Taylor\Documents\Visual Studio 2013\Projects\NetOnJets\NetOnJets\bin\Debug\GeekedOutReviews.Core\bin\Release\Ninject.xml
+C:\Users\Taylor\Documents\Visual Studio 2013\Projects\NetOnJets\NetOnJets\bin\Debug\GeekedOutReviews.Core\bin\Release\Ninject.Web.Common.xml
+C:\Users\Taylor\Documents\Visual Studio 2013\Projects\NetOnJets\NetOnJets\bin\Debug\GeekedOutReviews.Core\obj\Release\GeekedOutReviews.Core.csprojResolveAssemblyReference.cache
+C:\Users\Taylor\Documents\Visual Studio 2013\Projects\NetOnJets\NetOnJets\bin\Debug\GeekedOutReviews.Core\obj\Release\GeekedOutReviews.Core.dll
+C:\Users\Taylor\Documents\Visual Studio 2013\Projects\NetOnJets\NetOnJets\bin\Debug\GeekedOutReviews.Core\obj\Release\GeekedOutReviews.Core.pdb

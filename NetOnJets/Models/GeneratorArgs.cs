@@ -12,14 +12,17 @@ namespace NetOnJets.Models
         [ArgDescription("Controller Name")]
         [ArgShortcut("-c"), ArgShortcut("-controller")]
         public string ControllerName { get; set; }
+
         [ArgDescription("Model Name")]
         [ArgShortcut("-m"), ArgShortcut("-model")]
         public string ModelName { get; set; }
+        
         [ArgDescription("Defines Views")]
-        [ArgShortcut("-v"), ArgShortcut("-views")]
+        [ArgShortcut("-v")]
         public string[] Views { get; set; }
+        
         [ArgDescription("Defines Attributes")]
-        [ArgShortcut("-a"), ArgShortcut("-attributes")]
+        [ArgShortcut("-a")]
         public string[] Attributes { get; set; }
     }
 }
